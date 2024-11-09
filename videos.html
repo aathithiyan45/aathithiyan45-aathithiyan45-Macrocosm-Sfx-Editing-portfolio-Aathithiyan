@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Videos Example</title>
+    <style>
+        /* Reuse the button and video styles from the previous example */
+        #watchButton, .watchButton {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #watchButton:hover, .watchButton:hover {
+            background-color: #45a049;
+        }
+
+        .videoElement {
+            display: none;
+            width: 100%;
+            max-width: 640px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="watchButton" onclick="playVideo('video1')">Watch UnIT Boys</button>
+    <video id="video1" class="videoElement" controls>
+        <source src="Velankanni bench.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <button class="watchButton" onclick="playVideo('video2')">College Day</button>
+    <video id="video2" class="videoElement" controls>
+        <source src="saaral 2k.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <button class="watchButton" onclick="playVideo('video3')">Short Film</button>
+    <video id="video3" class="videoElement" controls>
+        <source src="sce - short film - aathi & aman - mobile addition.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button class="watchButton" onclick="playVideo('video4')">Speed Ramp</button>
+    <video id="video4" class="videoElement" controls>
+        <source src="one quanter .mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button class="watchButton" onclick="playVideo('video5')">Kodaikanal Trip</button>
+    <video id="video5" class="videoElement" controls>
+        <source src="kodaikanal trip.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button class="watchButton" onclick="playVideo('video6')">Train Travel</button>
+    <video id="video6" class="videoElement" controls>
+        <source src="varsha train cini 2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+        function playVideo(videoId) {
+            var video = document.getElementById(videoId);
+            video.style.display = "block"; // Show the selected video
+            video.play(); // Play the video
+        }
+    </script>
+
+</body>
+</html>

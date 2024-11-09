@@ -1,0 +1,317 @@
+h2{
+    color:#000000
+   
+}
+.homepage
+{
+ color: #1E3A8A;
+}
+.top-nav
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+.top-nav a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+.top-nav a:hover{
+    text-decoration:underline;
+}
+body{
+    background-color:#f0f0f0;
+    font-family: 'Roboto', sans-serif; /* Example font */
+
+}
+.contact-form {
+    max-width: 400px;           /* Maximum width of the form */
+    margin: 20px;               /* Set margin to position it */
+    padding: 20px;              /* Padding inside the form */
+    background-color: #f9f9f9;  /* Light background color */
+    border: 1px solid #ccc;     /* Border around the form */
+    border-radius: 5px;         /* Rounded corners */
+    float: left;                /* Align to the left */
+}
+.contact-info {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #942124;                    /* Blue color for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;        /* Underline on hover */
+}
+
+/* Business Hours & FAQ */
+.business-hours{
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Map / Location Link */
+.map-link {
+    text-align: center;
+    margin: 20px;
+}
+
+.map-link a {
+    color: #3897f0;
+    text-decoration: none;
+}
+
+.map-link a:hover {
+    text-decoration: underline;
+}
+/* Centering the policy links */
+.policy-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.policy-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.policy-links a:hover {
+    text-decoration: underline;
+}
+.method{
+    text-align: center;
+    margin-top: 20px;
+}
+/* Portfolio Container */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Set a fixed width for consistency */
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;          /* Keeps the image within the container width */
+    height: 200px;        /* Adjust height for uniformity */
+    object-fit: cover;    /* Crops image to fit the area without stretching */
+    border-radius: 8px;
+}
+
+
+.portfolio-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+
+.view-more {
+    padding: 8px 12px;
+    color: #ffffff;
+    background-color: #3897f0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.view-more:hover {
+    background-color: #3071a9;
+}
+.view-more, .video-links a {
+    border-radius: 25px; /* More rounded */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.view-more:hover, .video-links a:hover {
+    transform: translateY(-2px); /* Slight upward motion */
+}
+.view-more {
+    display: block;               /* Forces button onto a new line */
+    margin-top: 10px;             /* Adds spacing above the button */
+    padding: 8px 12px;
+    color: #ffffff;
+    background-color: #3897f0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.view-more:hover {
+    background-color: #3071a9;
+}
+/* Centering end */
+.end {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.end a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.end a:hover {
+    text-decoration: underline;
+}.watch-more-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.watch-more-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.video-links a {
+    display: inline-block;
+    margin: 5px 15px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #3897f0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.video-links a:hover {
+    background-color: #3071a9; /* Darker blue on hover */
+}
+@media (max-width: 600px) {
+    .portfolio-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .contact-form {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+.portfolio-container, .contact-form, .business-hours {
+    margin: 40px auto; /* Centralized margin */
+    padding: 30px; /* Increased padding */
+}
+.contact-form, .business-hours {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-section {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-form input, 
+#review-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#review-form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#review-form button:hover {
+    background-color: #218838;
+}
+
+.review {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.review h4 {
+    margin: 0;
+}
+
+.review p {
+    margin: 5px 0;
+}
+/* Button Styling */
+#watchButton {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding for the button */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0; /* Margin to space out */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button Hover Effect */
+#watchButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Video Styling */
+#myVideo {
+    display: none; /* Initially hidden */
+    width: 100%; /* Full width responsive */
+    max-width: 640px; /* Maximum width */
+    border: 2px solid #ddd; /* Border around the video */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 15px; /* Space above the video */
+}
